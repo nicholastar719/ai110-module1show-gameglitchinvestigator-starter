@@ -25,19 +25,18 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
-
+- The game’s purpose is to guess a randomly generated number using hints.
+- Bugs included reversed hints, Enter key not working, and inconsistent attempts.
+- Fixes included correcting hint logic, refactoring check_guess into logic_utils.py, and wrapping input in a Streamlit form.
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 40 --> game responds "Too Low"
+2. User enters a guess of 70 --> game responds "Too High"
+3. User adjusts guesses based on hints
+4. User enters correct number --> "Correct!"
+5. Game resets and allows a new round
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

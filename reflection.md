@@ -31,7 +31,7 @@ One correct AI suggestion was identifying that the Enter key issue was caused by
 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
-The AI initially gave a partially wrong fix mixing up which hint message belonged to each branch of the if statment. I verified the issue by running the game again and learning that higher guesses gave the wrong direction hint before correcting the logic and retesting it again.
+The AI initially gave a partially wrong fix mixing up which hint message belonged to each branch of the if statement. I verified the issue by running the game again and learning that higher guesses gave the wrong direction hint before correcting the logic and retesting it again.
 
 ## 3. Debugging and testing your fixes
 
@@ -45,12 +45,14 @@ I submitted different guesses while playing the game and instead of pressing the
 
 - Did AI help you design or understand any tests? How?
 
-Yes, any problem I identified it explained to me what part of the code, or what part that isn't in the code, is causing the issue and then in implemented it yourself.
+Yes, AI helped explain which part of the code was causing the issue and suggested how to implement tests.
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+
+Streamlit reruns the entire script every time you interact with the app. Session state is used to store values so they persist between reruns instead of resetting. Without it, game variables like score or attempts would restart constantly.
 
 ---
 
@@ -58,5 +60,13 @@ Yes, any problem I identified it explained to me what part of the code, or what 
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+  I want to reuse the habit of testing changes with pytest before relying on the UI. Next time, I would break AI changes into smaller steps and test more frequently. This project showed me that AI code still needs careful checking and validation instead of trusting it blindly.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+Next time, I would break AI suggestions into smaller steps and test each change before moving on. This would help catch mistakes earlier instead of fixing multiple issues at once.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+This project showed me that AI generated code can speed things up, but it still needs to be reviewed and testing because it can introduce small errors.
